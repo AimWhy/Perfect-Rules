@@ -1,0 +1,69 @@
+[
+  {
+    "outboundTag": "block",
+    "protocol": [
+      "http",
+      "tls",
+      "quic"
+    ],
+    "enabled": true,
+    "remarks": "\u5E7F\u544A\u62E6\u622A",
+    "ruleType": 0
+  },
+  {
+    "outboundTag": "proxy",
+    "protocol": [
+      "http",
+      "tls",
+      "quic"
+    ],
+    "enabled": true,
+    "remarks": "\u81EA\u5B9A\u4E49-\u6D41\u5A92\u4F53",
+    "ruleType": 0
+  },
+  {
+    "outboundTag": "proxy",
+    "protocol": [
+      "http",
+      "tls",
+      "quic"
+    ],
+    "enabled": true,
+    "remarks": "\u81EA\u5B9A\u4E49-AI\u7B56\u7565\u7EC4",
+    "ruleType": 0
+  },
+  {
+    "network": "tcp,udp",
+    "outboundTag": "direct",
+    "protocol": [
+      "http",
+      "tls",
+      "quic"
+    ],
+    "enabled": true,
+    "remarks": "\u5927\u9646\u76F4\u8FDE",
+    "ruleType": 0
+  },
+  {
+    "outboundTag": "proxy",
+    "protocol": [
+      "http",
+      "tls",
+      "quic"
+    ],
+    "enabled": true,
+    "remarks": "\u56FD\u5916\u4EE3\u7406",
+    "ruleType": 0
+  },
+  {
+    "outboundTag": "proxy",
+    "protocol": [
+      "http",
+      "tls",
+      "quic"
+    ],
+    "enabled": true,
+    "remarks": "Final",
+    "ruleType": 0
+  }
+]
