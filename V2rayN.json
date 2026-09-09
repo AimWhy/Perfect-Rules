@@ -1,69 +1,61 @@
 [
   {
+    "port": "443",
+    "network": "udp",
     "outboundTag": "block",
-    "protocol": [
-      "http",
-      "tls",
-      "quic"
-    ],
     "enabled": true,
-    "remarks": "\u5E7F\u544A\u62E6\u622A",
-    "ruleType": 0
+    "remarks": "UDP443\u963B\u65AD"
   },
   {
-    "outboundTag": "proxy",
-    "protocol": [
-      "http",
-      "tls",
-      "quic"
-    ],
-    "enabled": true,
-    "remarks": "\u81EA\u5B9A\u4E49-\u6D41\u5A92\u4F53",
-    "ruleType": 0
-  },
-  {
-    "outboundTag": "proxy",
-    "protocol": [
-      "http",
-      "tls",
-      "quic"
-    ],
-    "enabled": true,
-    "remarks": "\u81EA\u5B9A\u4E49-AI\u7B56\u7565\u7EC4",
-    "ruleType": 0
-  },
-  {
-    "network": "tcp,udp",
     "outboundTag": "direct",
-    "protocol": [
-      "http",
-      "tls",
-      "quic"
+    "ip": [
+      "geoip:private"
+    ],
+    "domain": [
+      "geosite:private"
     ],
     "enabled": true,
-    "remarks": "\u5927\u9646\u76F4\u8FDE",
-    "ruleType": 0
+    "remarks": "\u5C40\u57DF\u7F51\u4E13\u7528\u89C4\u5219"
+  },
+  {
+    "outboundTag": "block",
+    "domain": [
+      "geosite:category-ads-all"
+    ],
+    "enabled": true,
+    "remarks": "\u5E7F\u544A\u62E6\u622A"
   },
   {
     "outboundTag": "proxy",
-    "protocol": [
-      "http",
-      "tls",
-      "quic"
+    "domain": [
+      "geosite:category-ai-!cn"
     ],
     "enabled": true,
-    "remarks": "\u56FD\u5916\u4EE3\u7406",
-    "ruleType": 0
+    "remarks": "AI\u4E13\u7528\u89C4\u5219"
   },
   {
     "outboundTag": "proxy",
-    "protocol": [
-      "http",
-      "tls",
-      "quic"
+    "domain": [
+      "geosite:youtube"
     ],
     "enabled": true,
-    "remarks": "Final",
-    "ruleType": 0
+    "remarks": "\u6CB9\u7BA1\u4E13\u7528\u89C4\u5219"
+  },
+  {
+    "outboundTag": "direct",
+    "ip": [
+      "geoip:cn"
+    ],
+    "domain": [
+      "geosite:cn"
+    ],
+    "enabled": true,
+    "remarks": "\u56FD\u5185\u76F4\u8FDE"
+  },
+  {
+    "port": "0-65535",
+    "outboundTag": "proxy",
+    "enabled": true,
+    "remarks": "\u56FD\u5916\u4EE3\u7406"
   }
 ]
