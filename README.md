@@ -10,7 +10,7 @@
 
 | 代理软件 | 配置文件 | 视频教程 |
 | --- | --- | --- |
-| V2rayN | [V2rayN.json](./V2rayN.json) |  |
+| V2rayN | [V2rayN.json](./V2rayN.json) |https://youtu.be/eaTmKWPyVG4 |
 
 ## 使用说明
 
