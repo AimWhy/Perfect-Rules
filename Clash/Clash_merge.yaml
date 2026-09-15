@@ -11,14 +11,12 @@
 # Rule Provider 每 24 小时自动更新。
 # ============================================================
 
-
 # ============================================================
 # 核心网络设置
 # ============================================================
 
 # 关闭 IPv6，避免 IPv4 / IPv6 出口不一致
 ipv6: false
-
 
 # ============================================================
 # TUN
@@ -33,7 +31,6 @@ tun:
   dns-hijack:
     - any:53
     - tcp://any:53
-
 
 # ============================================================
 # DNS
@@ -70,7 +67,6 @@ dns:
   # 代理节点域名解析
   proxy-server-nameserver:
     - https://doh.pub/dns-query
-
 
 # ============================================================
 # Rule Providers
@@ -134,7 +130,6 @@ rule-providers:
     interval: 86400
     url: "https://cdn.jsdelivr.net/gh/n0de-sudo/Perfect-Rules@main/Clash/rules/software.yaml"
 
-
 # ============================================================
 # Proxy Groups
 # ============================================================
@@ -154,7 +149,6 @@ proxy-groups:
       - "🇹🇼 台湾节点 [系统]"
       - "🌐 全部节点 [系统]"
 
-
   - name: "🤖 AI服务 [自选]"
     type: select
     proxies:
@@ -165,7 +159,6 @@ proxy-groups:
       - "🌐 全部节点 [系统]"
       - DIRECT
 
-
   - name: "📺 油管专用 [自选]"
     type: select
     proxies:
@@ -175,7 +168,6 @@ proxy-groups:
       - "🇸🇬 新加坡节点 [系统]"
       - "🌐 全部节点 [系统]"
       - DIRECT
-
 
   - name: "🎬 流媒体 [自选]"
     type: select
@@ -188,7 +180,6 @@ proxy-groups:
       - "🌐 全部节点 [系统]"
       - DIRECT
 
-
   - name: "💬 电报专用 [自选]"
     type: select
     proxies:
@@ -199,7 +190,6 @@ proxy-groups:
       - "🌐 全部节点 [系统]"
       - DIRECT
 
-
   - name: "Ⓜ️ 微软服务 [自选]"
     type: select
     proxies:
@@ -209,7 +199,6 @@ proxy-groups:
       - "🇭🇰 香港节点 [系统]"
       - "🌐 全部节点 [系统]"
       - DIRECT
-
 
   - name: "🍎 苹果服务 [自选]"
     type: select
@@ -222,7 +211,6 @@ proxy-groups:
       - "🌐 全部节点 [系统]"
       - DIRECT
 
-
   - name: "🔍 谷歌服务 [自选]"
     type: select
     proxies:
@@ -234,7 +222,6 @@ proxy-groups:
       - "🌐 全部节点 [系统]"
       - DIRECT
 
-
   - name: "💰 币圈专用 [自选]"
     type: select
     proxies:
@@ -245,7 +232,6 @@ proxy-groups:
       - "🇹🇼 台湾节点 [系统]"
       - "🌐 全部节点 [系统]"
       - DIRECT
-
 
   - name: "🖥️ 软件分流 [自选]"
     type: select
@@ -260,14 +246,12 @@ proxy-groups:
       - "🌐 全部节点 [系统]"
       - DIRECT
 
-
   # ---------- 系统组 ----------
 
   - name: "🌐 全部节点 [系统]"
     type: select
     include-all-proxies: true
     exclude-type: "Direct"
-
 
   - name: "♻️ 自动选择 [系统]"
     type: url-test
@@ -278,7 +262,6 @@ proxy-groups:
     interval: 300
     tolerance: 50
     lazy: true
-
 
   # ---------- 地区节点 ----------
 
@@ -293,7 +276,6 @@ proxy-groups:
     tolerance: 50
     lazy: true
 
-
   - name: "🇯🇵 日本节点 [系统]"
     type: url-test
     include-all-proxies: true
@@ -304,7 +286,6 @@ proxy-groups:
     interval: 300
     tolerance: 50
     lazy: true
-
 
   - name: "🇸🇬 新加坡节点 [系统]"
     type: url-test
@@ -317,7 +298,6 @@ proxy-groups:
     tolerance: 50
     lazy: true
 
-
   - name: "🇺🇸 美国节点 [系统]"
     type: url-test
     include-all-proxies: true
@@ -328,7 +308,6 @@ proxy-groups:
     interval: 300
     tolerance: 50
     lazy: true
-
 
   - name: "🇹🇼 台湾节点 [系统]"
     type: url-test
@@ -341,13 +320,11 @@ proxy-groups:
     tolerance: 50
     lazy: true
 
-
   - name: "🛑 广告拦截 [系统]"
     type: select
     proxies:
       - REJECT
       - DIRECT
-
 
 # ============================================================
 # Rules
