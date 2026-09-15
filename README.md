@@ -5,9 +5,9 @@
 ## **🚀 快速开始**
 | **支持客户端**     | 版本 | **配置文件**                         | **使用方式**                                      | **教程视频**                 |
 | ------------------ | ---- | ------------------------------------ | ------------------------------------------------- | ---------------------------- |
-| **Clash / Mihomo** | 3.0  | [`Clash/`](./Clash/Clash_merge.yaml) | 复制配置 → 在Clash订阅的“全局覆写扩展配置” → 粘贴 | https://youtu.be/2A2SdHP_NKA |
-| **V2rayN**         | 2.0  | [`V2rayN.json`](./V2rayN.json)       | 下载文件 → 导入路由配置                           | https://youtu.be/eaTmKWPyVG4 |
-🔥 即将更新：karing等
+| **Clash / Mihomo** | 3.0  | [`Clash/`](./Clash/Clash_merge.yaml) | 复制粘贴（见下方） | https://youtu.be/2A2SdHP_NKA |
+| **V2rayN**         | 2.0  | [`V2rayN.json`](./V2rayN.json)       | 下载文件后配置（见下方）                        | https://youtu.be/eaTmKWPyVG4 |
+
 ------
 
 ## **⭐ Clash 完美分流 3.0**
