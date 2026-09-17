@@ -1,0 +1,31 @@
+{
+  "rules": [
+    {
+      "outbound": "current_selected",
+      "name": "TEST-Google",
+      "switch": true,
+      "or": false,
+      "domain_suffix": [
+        "google.com"
+      ]
+    },
+    {
+      "outbound": "direct",
+      "name": "TEST-Direct",
+      "switch": true,
+      "or": false,
+      "domain_suffix": [
+        "example.com"
+      ]
+    },
+    {
+      "outbound": "block",
+      "name": "TEST-Block",
+      "switch": true,
+      "or": false,
+      "domain_suffix": [
+        "ads.example.com"
+      ]
+    }
+  ]
+}
