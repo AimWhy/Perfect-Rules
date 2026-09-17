@@ -1,1 +1,12 @@
-just for fun！
+{
+  "version": 3,
+  "rules": [
+    {
+      "domain_suffix": [
+        "google.com",
+        "youtube.com",
+        "openai.com"
+      ]
+    }
+  ]
+}
