@@ -17,15 +17,40 @@
 
 **① Clash Mi → ② Clash / Mihomo → ③ V2rayN**
 
-| **支持客户端**       | **版本** | **客户端** | **功能**              | **配置文件**                                   | **使用方式**             | **教程视频**                 |
-| -------------------- | -------- | ---------- | --------------------- | ---------------------------------------------- | ------------------------ | ---------------------------- |
-| **① Clash Mi**       | 3.0      | 全平台     | 完美分流 / DNS 防泄漏 | [`Clash_mi.js`](./Clash/Clash_mi.js)           | 一键导入                 | https://youtu.be/jmJiyDSmZE0 |
-| **② Clash / Mihomo** | 3.0      | PC         | 完美分流 / DNS 防泄漏 | [`Clash_merge.yaml`](./Clash/Clash_merge.yaml) | 复制粘贴（见下方）       | https://youtu.be/2A2SdHP_NKA |
-| **③ V2rayN**         | 2.0      | PC         | 完美分流              | [`V2rayN.json`](./V2rayN.json)                 | 下载文件后配置（见下方） | https://youtu.be/eaTmKWPyVG4 |
+| **支持客户端**      | **版本** | **客户端** | **功能**              | **配置文件**                                   | **使用方式**             | **教程视频**                 |
+| ------------------- | -------- | ---------- | --------------------- | ---------------------------------------------- | ------------------------ | ---------------------------- |
+| FlClash             | 3.0      | 全平台     | 完美分流/DNS防泄露    | [`FlClash.js`](./Clash/FlClash.js)             | 一键导入                 | https://youtu.be/7RXy43TpjTs |
+| **Clash Mi**        | 3.0      | 全平台     | 完美分流 / DNS 防泄漏 | [`Clash_mi.js`](./Clash/Clash_mi.js)           | 一键导入                 | https://youtu.be/jmJiyDSmZE0 |
+| ** Clash / Mihomo** | 3.0      | PC         | 完美分流 / DNS 防泄漏 | [`Clash_merge.yaml`](./Clash/Clash_merge.yaml) | 复制粘贴（见下方）       | https://youtu.be/2A2SdHP_NKA |
+| ** V2rayN**         | 2.0      | PC         | 完美分流              | [`V2rayN.json`](./V2rayN.json)                 | 下载文件后配置（见下方） | https://youtu.be/eaTmKWPyVG4 |
 
 **推荐：** 如果你希望在**不同设备上使用统一的**分流规则，并同时解决 DNS 泄漏问题，可以优先选择 **Clash Mi 3.0**。
 
 ------
+
+## FlClash 3.0：完美分流 + DNS防泄漏——一键配置
+
+FlClash 用户可以使用项目提供的[`FlClash.js`](./Clash/FlClash.js)，一键导入完整的 Perfect Rules 配置。
+
+目前FlClash支持多平台（仅iOS不支持），并采用统一的配置逻辑。
+
+### **使用方法**
+
+第一步：打开项目中的[`FlClash.js`](./Clash/FlClash.js)，获取脚本的RAW地址。
+
+第二步：打开 FlClash，导入路径为：
+```
+工具 → 进阶配置 → 脚本 → 右上角“添加” → 外部获取 → 通过URL导入，粘贴下方的RAW地址 → 重命名 → 保存
+```
+第三步：在配置中设置覆写，点选刚刚导入的脚本。
+
+#### **远程配置地址**
+
+**GitHub Raw：**
+```text
+https://github.com/n0de-sudo/Perfect-Rules/blob/main/Clash/FlClash.js
+```
+
 
 ## **① ⭐ Clash Mi 3.0：完美分流 + DNS 防泄漏——懒人版**
 
